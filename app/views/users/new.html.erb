@@ -1,0 +1,21 @@
+<h2>Signup!</h2>
+
+<%= form_for :user, url: '/users' do |f| %>
+
+  <div>
+  	Name: <%= f.text_field :name, autofocus: true %>
+  </div>
+  <div>
+  	Email: <%= f.text_field :email %>
+  </div>
+  <div>
+  	Password: <%= f.password_field :password %>
+  </div>
+  <div>
+  	Password Confirmation: <%= f.password_field :password_confirmation %>
+  </div>
+  <div>
+  	<%= f.submit "Submit" %>
+  </div>	
+
+<% end %>
